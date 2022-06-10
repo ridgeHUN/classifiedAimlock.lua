@@ -4204,7 +4204,7 @@ local MiscTab = library:AddTab"Misc"
 local MiscColumn = MiscTab:AddColumn()
 local MiscColumn1 = MiscTab:AddColumn()
 local MiscMain = MiscColumn:AddSection"Main"
-MiscMain:AddButton({text = "Copy Discord invite", callback = function() setclipboard("https://discord.gg/pBRqP4xT9P") end})
+
 if syn then
 	MiscMain:AddSlider({text = "Set FPS Cap", min = 60, max = 300, callback = function(Value) setfpscap(Value) end})
 end
